@@ -15,6 +15,7 @@ function CategoriesPage() {
   const t = (any: any) => any
   const data: any[] = []
   const [sorting, setSorting] = useState<SortingState>([])
+  console.log('Delete me and save when the server is running')
   const columns = useMemo(
     () => [
       columnHelper.accessor('name', {
