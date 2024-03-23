@@ -45,7 +45,7 @@ function CategoriesPage() {
   )
 
   const table = useReactTable({
-    data: [],
+    data: data,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
