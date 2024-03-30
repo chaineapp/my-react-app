@@ -15,7 +15,7 @@ function CategoriesPage() {
   const t = (any: any) => any
   const data: any[] = []
   const [sorting, setSorting] = useState<SortingState>([])
-  console.log('Delete me and save when the server is running')
+  
   const columns = useMemo(
     () => [
       columnHelper.accessor('name', {
@@ -61,6 +61,7 @@ function CategoriesPage() {
 
   return (
     <Box sx={{width: '100%', overflowX: 'auto'}}>
+      <text>Open the console and click a column</text>
       <Table mt="xl" withBorder withColumnBorders highlightOnHover>
         <thead>
           {table.getHeaderGroups().map(headerGroup => (
