@@ -12,6 +12,9 @@ import {useEffect, useMemo, useState} from 'react'
 const columnHelper = createColumnHelper<any>()
 
 function CategoriesPage() {
+  // There is an issue with the performance of this table. Please try to solve it. Run the repo, and either delete the console.log and save (while the server is running) or sort while the server is running.
+  // The problem is not with the implementation with react-table
+  
   const t = (any: any) => any
   const data: any[] = []
   const [sorting, setSorting] = useState<SortingState>([])
