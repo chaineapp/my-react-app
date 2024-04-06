@@ -65,6 +65,11 @@ function CategoriesPage() {
   return (
     <Box sx={{width: '100%', overflowX: 'auto'}}>
       <text>Open the console and click a column</text>
+      <text>-----------------------------------</text>
+      <text>Please tackle this in the following steps:</text>
+      <text>1: Identify what the exact problem is</text>
+      <text>2: Identify what exactly is causing the problem</text>
+      <text>3: Apply a solution</text>
       <Table mt="xl" withBorder withColumnBorders highlightOnHover>
         <thead>
           {table.getHeaderGroups().map(headerGroup => (
