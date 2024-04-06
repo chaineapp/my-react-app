@@ -13,7 +13,6 @@ const columnHelper = createColumnHelper<any>()
 
 function CategoriesPage() {
   // There is an issue with the performance of this table. Please try to solve it. Run the repo, and either delete the console.log and save (while the server is running) or sort while the server is running.
-  // The problem is not with the implementation with react-table
   
   const t = (any: any) => any
   const data: any[] = []
@@ -70,6 +69,9 @@ function CategoriesPage() {
       <text>1: Identify what the exact problem is</text>
       <text>2: Identify what exactly is causing the problem</text>
       <text>3: Apply a solution</text>
+      <text>-----------------------------------</text>
+      <text>-----------------------------------</text>
+      <text>Note: The problem is not with the implementation of react-table or third-party libraries</text>
       <Table mt="xl" withBorder withColumnBorders highlightOnHover>
         <thead>
           {table.getHeaderGroups().map(headerGroup => (
